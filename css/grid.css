@@ -1,0 +1,390 @@
+.wrapper {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-no-margin {
+    display: flex;
+}
+
+.col, .col-4 {
+    position: relative;
+    width: 100%;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.col-no-margin {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-wrapper {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+}
+
+.header {
+    margin-top: 20px;
+    height: 80px;
+    padding-left: 50px;
+    margin-bottom: min(30vw, 150px);
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-header .nav-list {
+    padding-left: max(60px, 8vw);
+    align-self: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+}
+
+.nav-list .drop-down-list {
+    position: absolute;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.nav-list .drop-down-list a {
+    white-space: nowrap;
+    width: 100%;
+    height: 80%;
+}
+
+.nav-list li:hover > .drop-down-list {
+    padding: 0;
+    display: flex;
+}
+
+.menu-icon {
+    width: 60px;
+    height: 60px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-icon>span {
+    width: 48px;
+      height: 5px;
+     margin: 6px;
+    display: block;
+}
+
+.menu-text {
+    display: none;
+}
+
+@media (max-width: 720px){
+    .header {
+        width: 100vw;
+        padding-left: 10px;
+        margin-left: -5vw;
+        margin-top: 0px;
+    }
+    .nav-list {
+        position: absolute;
+        visibility: hidden;
+        top: 80px;
+        left: 0;
+        transition: 0.5s;
+        padding-top: 5px;
+        flex-direction: column;
+    }
+
+    .nav-list.opened{
+        visibility: visible;
+        transition: 0.5s;
+    }
+
+    .nav-header>.nav-list{
+        padding-left: 5px;
+    }
+
+    .menu-icon {
+        display: flex;
+        margin-left: 5px;
+    }
+
+    .menu-text {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .logo {
+        position: absolute;
+        right: 10vw;
+    }
+
+    .nav-list ul.drop-down-list {
+        display: block;
+        position: static;
+    }
+
+    .nav-list li{
+        display: flex;
+        flex-direction:column;
+        flex-grow: 0;
+    }
+
+    .nav-list li>a{
+        line-height: 25px;
+        padding: 0px 5px 0px 0px;
+    }
+
+    .nav-list li:hover > .drop-down-list{
+        padding-left: 40px;
+    }
+}
+
+.popup-wrapper {
+    display: none;
+}
+  
+.center-text {
+    text-align: center;
+    align-items: center; 
+}
+  
+.x-padding{
+    padding: 0 min(100px, 6vw);
+}
+
+.image-col img {
+    width: 100%;
+}
+
+.hotels {
+    text-align: center;
+}
+
+.hotel-cards {
+    padding: 0 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-face {
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card.card-expanded .card-face {
+    display: none;
+}
+
+.card.card-expanded .card-back {
+    display: flex;
+}
+
+.card-face h4 {
+    margin-top: 0px;
+}
+
+.card-face p {
+    max-height: 350px;
+    overflow: auto;
+}
+
+.card-back {
+    justify-content: center;
+    align-items: center; 
+    display: none;
+    min-height: 350px;
+    width: 100%;
+}
+
+.card-list-wrapper {
+    width: 100%;
+}
+
+.card-list {
+    width: 100%;
+}
+  
+.custom-list {
+    padding-inline-start: 0;
+}
+  
+.card-bottom {
+    text-align: center;
+    margin-top: auto;
+}
+
+.agenda {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.reg-button {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.reg-button button {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 320px;
+}
+
+.column {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.social-media-icons {
+    width: 60%;
+    padding-top: 10px;
+    font-size: 0.4em;
+}
+
+.social-media-icons img{
+  width: 80%;
+}
+
+.popup-wrapper.opened {
+    display: block;
+}
+
+.popup {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.h-reg {
+    text-align: center;
+}
+
+.slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.landscape-carousel .slick-slide {
+    padding: 0 15px;
+    height: auto;
+    outline: none;
+}
+
+.hotel-cards-carousel .slick-slide {
+    padding: 0 15px;
+    height: auto;
+    outline: none;
+}
+
+.landscape-carousel .slick-slide img {
+    width: 100%;
+}
+
+.contacts{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    padding-top: 1%;
+    align-items:center;
+}
+
+.text-wrapper{
+    display:flex;
+    justify-content:space-around;
+}
+
+@media(max-width:640px){
+    .footer-header, .phone-number{
+        display:none;
+    }
+    .contacts > .row{
+        display:flex;
+        flex-direction: column;
+    }
+    .social-media-icon{
+        margin: 5% 0%;
+    }
+    .social-media-icon > a img{
+        max-width: 50%;
+        height: auto;
+    }
+    .social-media-icons{
+        width:100%;
+        align-items:center;
+    }
+    .align-left{
+        max-width:100%;
+        text-align:left;
+    }
+    .text-wrapper{
+        display:flex;
+        flex-direction: column-reverse;
+        padding-right: 2.5%;
+    }
+}

@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Sedan SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sedan SC'), url('https://fonts.cdnfonts.com/s/15699/SedanSC-Regular.woff') format('woff');
+}
+
+div, header, footer, nav, p,
+h1, h2, h3, h4, h5, h6, ul, ol {
+    box-sizing: border-box;
+}
+
+.popup-wrapper {   
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+body {
+    margin: 0;
+    background:
+    linear-gradient(to bottom, transparent, white calc(0.66 * max(800px, 100vw))),
+    url(https://i.ibb.co/JvV4134/image-Background.png);
+    background-repeat: no-repeat;
+    background-size: max(800px, 100%);
+    background-position: top center;
+    font-size: 26px;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 20px;	
+    }
+}
+  
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;	
+    }
+}
+
+h1 {
+    font-weight:100;
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-weight:100;
+}
+
+.header {
+    background: #F3F4F4;
+    opacity: 0.8;
+}
+
+.nav-list li a {
+    font-size: 1.4em;
+    width: 100%;
+    line-height: 80px;
+    padding: 0 15px;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.nav-list li a:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-list .drop-down-list {
+    background-color: #F3F4F4;
+}
+
+.menu-icon {
+    background-color: #F3F4F4;
+}
+
+.menu-icon>span {
+    background-color: black;
+}
+
+.menu-text {
+    font-size: 2em;
+}
+
+@media (max-width: 720px){
+    .header {
+        background-color: #f3f4f4a6;
+    }
+    .nav-list {
+        background-color: #F3F4F4;
+    }
+}
+
+.center-text p{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.center-text h1{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.hotel-cards {
+    background-color: #F6F6F6;
+}
+.card-face {
+    background-color: #F6F6F6;
+}
+
+.card-face p {
+    font-size: 20px;
+}
+
+.card-back {
+    background-repeat: no-repeat;
+}
+
+.card-list-wrapper {
+    background: #F3F4F4;
+    opacity: 0.7;
+}
+
+.card-button {
+    font-size: 1.1em;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    width: 90%;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+.agenda h3 {
+    font-weight: 100;
+    font-size: 1.7em;
+}
+
+.agenda li {
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.reg-button button {
+    font-size: 1.1em;
+    font-family: 'Sedan SC', sans-serif;
+    border: 1px solid #FEDE8D;
+    background: #FEDE8D;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #FEDE8D;
+}
+
+.footer{
+    background-color: #F6F6F6;
+}
+
+.footer .copyright{
+    margin-bottom: 30;
+    font-family: Garamond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.popup {
+    background-color: #F6F6F6;
+}
+
+.apply-button{
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.popup label {
+    text-align: left;
+}
+
+.phone-number{
+    color: black;
+    text-decoration: none;
+}
+
+.reg-field {
+    font-size: 1em;
+    border: 0px;
+    width: 100%;
+}

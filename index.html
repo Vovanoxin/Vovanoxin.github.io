@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+	<title>Tour</title>
+  
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="JS/script.js"></script>
+
+
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+      <div class="nav-header">
+				<div class="logo">
+					<a href=""><img src="images/logo.png" alt="Logo"></a>
+				</div>
+
+				<ul class="nav-list" id='nav-list'>
+					<li>
+						<a href="#">Home</a>
+						<ul class="drop-down-list">
+							<li>
+								<a href="#">Photos</a>
+							</li>
+							<li>
+								<a href="#">Feedbacks</a>
+							</li>
+							<li>
+								<a href="#">About Us</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Tours</a>
+						<ul class="drop-down-list">
+							<li>
+								<a href="#">Most Popular</a>
+							</li>
+							<li>
+								<a href="#">Econom</a>
+							</li>
+							<li>
+								<a href="#">Last Minute</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Partners</a>
+					</li>
+
+					<li>
+						<a href="#">My Tours</a>
+					</li>
+
+				</ul>
+        <div class="menu-icon" onclick="toggleMenu('nav-list')">
+  				<span class="bar1"></span>
+  				<span class="bar2"></span>
+  				<span class="bar3"></span>
+				</div>
+        <span class="menu-text">MENU</span>
+			</div>
+		</header>
+    
+		<main>
+			<!--class col -->
+			<section class="center-text x-padding">
+				<h1>Beyond sun, sand and sea</h1>
+				<p>Abundant and up-to-date tourist facilities, as well as well-preserved historical sites, give you a number of options for daily activities. Perge (18km from Antalya) was an important city of ancient Pamphylia, which St Paul visited on his first missionary journey. Swimmers and sunbathers alike enjoy Belek, a modern luxurious holiday center and golfer's paradise, 40km from Antalya. A photogenic Seljuk bridge crosses the Köprü River from the road to Aspendos. The Aspendos Theatre is the best-preserved theatre of antiquity, with a capacity of 15,000 spectators. Still used today, the theatre's galleries, stage decorations, and acoustics all testify to the architect's success. Nearby stand the remains of a basilica, an agora, and one of the largest aqueducts in Anatolia.</p>
+			</section>
+			
+      
+			
+      <div class="landscape-carousel">
+        <div>
+          <img src="images/image4.png" alt="image2">
+        </div>
+
+        <div>
+          <img src="images/image4.png" alt="image3">
+        </div>
+
+        <div>
+          <img src="images/image4.png" alt="image4">
+        </div>
+      </div>
+
+
+
+			<!--should add scroll to the cards -->
+
+			<section class="cards">
+				<h2 class="center-text">Hotels</h2>
+        <div class="hotel-cards-carousel">
+            <div class="card">
+              <div class="card-face">
+                <h4 class="center-text">White Garden Hotel</h4>
+                <p>
+                  The building of this guest house is built in an architectural
+                  style typical of the Kaleici area. The rooftop terrace offers
+                  views of the Taurus Mountains and the Mediterranean Sea.
+                </p>
+                <div class="card-bottom">
+                  <button class="card-button" onclick="toggleCard(this)">More</button>	
+                </div>
+              </div>
+              <div class="card-back" style="background-image: url(images/akra.png);">
+                <div class="card-list-wrapper">
+                  <ul class="card-list">
+                    <li>2 bathrooms</li>
+                    <li>2 bedrooms</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Parkyard</li>
+                    <li>Pool</li>
+                    <li>All inclusive</li>
+                  </ul>
+              	</div>    
+              </div>
+        		</div>
+				
+					<div class="card">
+						<div class="card-face">
+							<h4 class="center-text">Akra Hotel</h4>
+							<p>Best hotel I have been to so far. It is proper 5 star for everything e.g. room size, facilities inside the room and in the hotel. Food varieties, quality.</p>
+              <div class="card-bottom">
+                <button class="card-button" onclick="toggleCard(this)">More</button>	
+              </div>
+						</div>
+						<div class="card-back" style="background-image: url(images/whitegarden.png);">
+							<div class="card-list-wrapper">
+                <ul class="card-list">
+                  <li>2 bathrooms</li>
+                  <li>2 bedrooms</li>
+                  <li>Free Wi-Fi</li>
+                  <li>Parkyard</li>
+                  <li>All inclusive</li>
+                </ul>
+            	</div>
+						</div>
+					</div>
+				
+					<div class="card">
+						<div class="card-face">
+							<h4 class="center-text">Casa SUR Hotel</h4>
+							<p>The rooftop terrace offers views of the Taurus Mountains and the Mediterranean Sea.</p>	
+              <div class="card-bottom">
+                <button class="card-button" onclick="toggleCard(this)">More</button>	
+              </div>
+						</div>
+						<div class="card-back" style=" background-image: url(images/casasur.png);">
+						 <div class="card-list-wrapper">
+              <ul class="card-list">
+								<li>1 bathrooms</li>
+								<li>2 bedrooms</li>
+								<li>Free Wi-Fi</li>
+								<li>Parkyard</li>
+								<li>Pool</li>
+							</ul>
+             </div>
+						</div>
+					</div>
+      </div>
+				
+        
+			</section>
+
+			<section class="agenda">
+				<h3>Agenda for seven-days tour</h3>
+				<ul class="custom-list">
+					<li>1. Kurshunlu waterfalls trip</li>
+					<li>2. Aspendos</li>
+					<li>3. Perge</li>
+					<li>4-5. Pamukkale two-days trip</li>
+					<li>6. Cascades</li>
+					<li>7. Old town excursion</li>
+				</ul>
+				<p class="smaller">*Number in the list is a number of the day of trip</p>
+			</section>
+			
+      		<div class="reg-button" onclick="toggleModal('popup-reg', event)">
+				<button>Registration</button>
+			</div>
+
+
+		</main>
+
+		<footer class="footer">
+      <div class="row">
+        <!--Плохое название класса, не могу придумать как лучше column-->
+        <div class="col-4 center-text column col">
+          <div class="contacts">
+            <h5 class="footer-header">Contacts</h5>
+            <a class="phone-number" href="+380399324u">+380 399324u</a>
+            <a class="phone-number" href="+3805466372">+380 5466372</a>
+            <div class="social-media-icons row">
+               <div class="social-media-icon col-4">
+                <a href="#"><img src="images/phone.png" alt="phone"></a>
+              </div>
+               <div class="social-media-icon col-4">
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+              </div>
+               <div class="social-media-icon col-4">
+                <a href="#"><img src="images/telegram.png" alt="telegram"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-wrapper">
+            <div class="col-4 align-left">
+              <h5 class="footer-header">Adress</h5>
+              <p>Wayershtrasse st. 89, 
+                  Berlin, Germany
+                Folkwalk st. 12A, London, UK</p>
+            </div>
+            <div class="col-4 align-left">
+              <h5 class="footer-header">Schedule</h5>
+              <p>Mon-Sat: 10:00-18:00</p>
+            </div>
+        </div>
+        </div>
+      <p class="copyright">© 1997 «Best Turkey Tours»</p>
+		</footer>
+	</div>
+	
+	<div id="popup-reg" class="popup-wrapper">
+		<div class="popup">
+			<h2 class="h-reg">Personal information</h2>
+			<form>
+        <div class="row">
+          <div class="col col-6">
+            <label for="popupFirstNameField">First name</label>
+            <input class="reg-field" type="text" name="first_name" id="popupFirstNameField">
+
+            <label for="popupLastNameField">Last name</label>
+            <input class="reg-field" type="text" name="last_name" id="popupLastNameField">
+          </div>
+
+          <div class="col col-6">
+            <label for="popupEmailField">E-mail</label>
+            <input class="reg-field" type="email" name="email" id="popupEmailField">
+
+            <label for="popupPhoneField">Phone number</label>
+            <input class="reg-field" type="tel" name="phone" id="popupPhoneField">
+					</div>
+        </div>
+			</form>
+			<button class="apply-button">Apply</button>
+		</div>
+	</div>
+</body>
+</html>
